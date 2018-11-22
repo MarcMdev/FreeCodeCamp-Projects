@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Dungeons and Dragons Survey</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative:900|Inconsolata:700|Roboto+Slab:700" rel="stylesheet">
+    <script src="main.js"></script>
+</head>
+<body>
+    <h1 id="title">D&D Survey</h1>
+    <div class="container">
+        <div class="header">
+            <p id="description" class="form">Let us know what kind of D&D player you are!</p>
+        </div>
+            <form action="" method="GET" id="survey-form">
+                <div class="lcontent">
+                    <label for="name" id="name-label">*Name:</label>
+                </div>  
+                <div class="rcontent input">
+                    <input type="text" name="name" id="name" placeholder="name" class="inpfield" required>
+                </div>
+                <div class="lcontent">
+                    <label for="email" id="email-label">*Email:</label>
+                </div>  
+                <div class="rcontent input">
+                    <input type="email" name="email" id="email" placeholder="Email" class="inpfield" required>
+                </div>
+                <div class="lcontent">
+                    <label for="number" id="age-label">*Age:</label>
+                </div>  
+                <div class="rcontent input">
+                    <input type="number" name="Age" id="number" min="1" max="125" placeholder="Age" class="inpfield" required>
+                </div>
+                <div class="lcontent">
+                    <label for="position">What kind of position do you feel better at?</label>
+                </div>  
+                <div class="rcontent input">
+                    <select name="position" id="position" class="inpfield">
+                        <option value="player">Player</option>
+                        <option value="master">Master</option>
+                        <option value="both">Both</option>
+                        <option value="thatguy">That guy that sits in the corner and watches</option>
+                    </select>
+                </div>
+                <div class="lcontent">
+                    <label for="style">How would you describe your playstyle?</label>
+                </div>  
+                <div class="rcontent input">
+                    <select name="style" id="position" class="inpfield">
+                        <option value="aggressive">Player: Aggressive</option>
+                        <option value="tanker">Player: Tanker</option>
+                        <option value="support">Player: Support</option>
+                        <option value="disaster">Player: the reason of everyone else's deaths</option>
+                        <option value="theone">Player: The one who makes no difference at all</option>
+                        <option value="coolguy">Master: Cool Guy</option>
+                        <option value="realistic">Master: Realistic</option>
+                        <option value="rplayer">Master: True Role Player</option>
+                        <option value="beefy">Master: Kills you outta beef</option>0
+                        <option value="dick">Master: Total DICK!</option>
+                    </select>
+                </div>
+                <div class="lcontent">
+                        <label for="race">Your favorite 5e's vanilla race:</label>
+                </div>  
+                <div class="rcontent">
+                    <input type="radio" name="race" value="dawrk">Dwarf<br>
+                    <input type="radio" name="race" value="dragonborn">Dragonborn<br>
+                    <input type="radio" name="race" value="elf">Elf<br>
+                    <input type="radio" name="race" value="gnome">Gnome<br>
+                    <input type="radio" name="race" value="half-elf">Half-Elf<br>
+                    <input type="radio" name="race" value="half-orc">Half-Orc<br>
+                    <input type="radio" name="race" value="halfling">Halfling<br>
+                    <input type="radio" name="race" value="human">Human<br>
+                    <input type="radio" name="race" value="tiefling">Tiefling<br>
+                    <input type="radio" name="race" value="msup">The messed up new races
+                </div>
+                <div class="lcontent">
+                    <label for="class">Your favorite class:</label>
+                </div>  
+                <div class="rcontent">
+                    <input type="checkbox" class="class" name="barbarian">Barbarian<br>
+                    <input type="checkbox" class="class" name="bard">Bard<br>
+                    <input type="checkbox" class="class" name="cleric">Cleric<br>
+                    <input type="checkbox" class="class" name="druid">Druid<br>
+                    <input type="checkbox" class="class" name="fighter">Fighter<br>
+                    <input type="checkbox" class="class" name="monk">Monk<br>
+                    <input type="checkbox" class="class" name="paladin">Paladin<br>
+                    <input type="checkbox" class="class" name="ranger">Ranger<br>
+                    <input type="checkbox" class="class" name="rogue">Rogue<br>
+                    <input type="checkbox" class="class" name="sorcerer">Sorcerer<br>
+                    <input type="checkbox" class="class" name="warlock">Warlock<br>
+                    <input type="checkbox" class="class" name="wizard">Wizard<br>
+                    <input type="checkbox" class="class" name="god">God! (the master)<br>
+                </div>
+                <div class="lcontent">
+                    <label for="comment">Tell us what you like the most about D&D</label>
+                </div>  
+                <div class="rcontent">
+                    <textarea name="comment" rows="7" cols="30">
+                    </textarea>
+                </div>
+                <div class="btn">
+                    <button type="submit" id="btn">Submit</button>
+                </div>
+            </form>
+        </div>
+    
+    
+</body>
+</html>
